@@ -34,3 +34,8 @@ yarn add ᐸPackage nameᐳ
 
 - [@Byndyusoft/owners](https://github.com/orgs/Byndyusoft/teams/owners) <<github.maintain@byndyusoft.com>>
 - [@Byndyusoft/team](https://github.com/orgs/Byndyusoft/teams/team)
+
+## License
+
+This repository is released under version 2.0 of the
+[Apache License](https://www.apache.org/licenses/LICENSE-2.0).

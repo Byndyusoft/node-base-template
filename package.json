@@ -10,12 +10,14 @@
     "type": "git",
     "url": "https://github.com/Byndyusoft/node-base-template.git"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "author": "Byndyusoft",
   "scripts": {
     "build": "echo '(・_・)ノ'",
-    "lint": "yarn run lint:markdown && yarn run lint:prettier",
-    "lint:fix": "yarn run lint:markdown:fix && yarn run lint:prettier:fix",
+    "lint": "yarn run lint:eslint && yarn run lint:markdown && yarn run lint:prettier",
+    "lint:fix": "yarn run lint:eslint:fix && yarn run lint:markdown:fix && yarn run lint:prettier:fix",
+    "lint:eslint": "eslint --ignore-path ./.gitignore --max-warnings 0 --ext .ts,.js .",
+    "lint:eslint:fix": "eslint --ignore-path ./.gitignore --fix --ext .ts,.js .",
     "lint:markdown": "markdownlint --ignore-path ./.gitignore \"./**/*.md\"",
     "lint:markdown:fix": "markdownlint --ignore-path ./.gitignore --fix \"./**/*.md\"",
     "lint:prettier": "prettier --ignore-path ./.gitignore --check \"./**/*.{ts,js,json,yaml,yml,md}\"",
@@ -26,10 +28,12 @@
     "test:cov": "echo '╮(˘､˘)╭'"
   },
   "devDependencies": {
+    "@byndyusoft/eslint-config": "^1.0.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "husky": "^7.0.0",
-    "lint-staged": "^11.0.0",
+    "eslint": "^7.31.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
     "markdownlint-cli": "^0.27.1",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",
