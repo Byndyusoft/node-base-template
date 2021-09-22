@@ -24,7 +24,7 @@ jobs:
           node-version: "14"
 
       - name: install dependencies
-        run: yarn install --production false --frozen-lockfile
+        run: yarn install --production false --frozen-lockfile --ignore-engines
 
       - name: build
         run: yarn run build
