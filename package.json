@@ -13,7 +13,6 @@
   "license": "Apache-2.0",
   "author": "Byndyusoft",
   "scripts": {
-    "build": "echo '(・_・)ノ'",
     "postinstall": "husky install",
     "lint": "yarn run lint:eslint && yarn run lint:markdown && yarn run lint:prettier",
     "lint:eslint": "eslint --ignore-path ./.gitignore --max-warnings 0 --ext .ts,.js .",
@@ -24,8 +23,7 @@
     "lint:prettier": "prettier --ignore-path ./.gitignore --check \"./**/*.{ts,js,json,yaml,yml,md}\"",
     "lint:prettier:fix": "prettier --ignore-path ./.gitignore --write \"./**/*.{ts,js,json,yaml,yml,md}\"",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "test:cov": "echo '╮(˘､˘)╭'"
+    "postpublish": "pinst --enable"
   },
   "devDependencies": {
     "@byndyusoft/eslint-config": "^1.1.0",
@@ -41,7 +39,7 @@
     "semantic-release": "^19.0.2"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "publishConfig": {
     "access": "public"
