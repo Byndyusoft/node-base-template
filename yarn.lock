@@ -55,21 +55,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@byndyusoft/base-template@workspace:."
   dependencies:
-    "@byndyusoft/eslint-config": "npm:^2.0.0"
-    "@commitlint/cli": "npm:^17.0.2"
-    "@commitlint/config-conventional": "npm:^17.0.2"
-    eslint: "npm:^8.16.0"
-    husky: "npm:^8.0.1"
-    lint-staged: "npm:^13.0.0"
-    markdownlint-cli: "npm:^0.31.1"
-    pinst: "npm:^3.0.0"
-    prettier: "npm:^2.6.2"
-    prettier-plugin-packagejson: "npm:^2.2.18"
-    semantic-release: "npm:^19.0.2"
+    "@byndyusoft/eslint-config": "npm:2.0.0"
+    "@commitlint/cli": "npm:17.0.2"
+    "@commitlint/config-conventional": "npm:17.0.2"
+    eslint: "npm:8.16.0"
+    husky: "npm:8.0.1"
+    lint-staged: "npm:13.0.0"
+    markdownlint-cli: "npm:0.31.1"
+    pinst: "npm:3.0.0"
+    prettier: "npm:2.6.2"
+    prettier-plugin-packagejson: "npm:2.2.18"
+    semantic-release: "npm:19.0.2"
   languageName: unknown
   linkType: soft
 
-"@byndyusoft/eslint-config@npm:^2.0.0":
+"@byndyusoft/eslint-config@npm:2.0.0":
   version: 2.0.0
   resolution: "@byndyusoft/eslint-config@npm:2.0.0"
   dependencies:
@@ -106,7 +106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^17.0.2":
+"@commitlint/cli@npm:17.0.2":
   version: 17.0.2
   resolution: "@commitlint/cli@npm:17.0.2"
   dependencies:
@@ -126,7 +126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.0.2":
+"@commitlint/config-conventional@npm:17.0.2":
   version: 17.0.2
   resolution: "@commitlint/config-conventional@npm:17.0.2"
   dependencies:
@@ -2702,7 +2702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.16.0":
+"eslint@npm:8.16.0":
   version: 8.16.0
   resolution: "eslint@npm:8.16.0"
   dependencies:
@@ -3441,7 +3441,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.1":
+"husky@npm:8.0.1":
   version: 8.0.1
   resolution: "husky@npm:8.0.1"
   bin:
@@ -4186,7 +4186,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^13.0.0":
+"lint-staged@npm:13.0.0":
   version: 13.0.0
   resolution: "lint-staged@npm:13.0.0"
   dependencies:
@@ -4479,7 +4479,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli@npm:^0.31.1":
+"markdownlint-cli@npm:0.31.1":
   version: 0.31.1
   resolution: "markdownlint-cli@npm:0.31.1"
   dependencies:
@@ -5576,7 +5576,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinst@npm:^3.0.0":
+"pinst@npm:3.0.0":
   version: 3.0.0
   resolution: "pinst@npm:3.0.0"
   bin:
@@ -5627,7 +5627,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-packagejson@npm:^2.2.18":
+"prettier-plugin-packagejson@npm:2.2.18":
   version: 2.2.18
   resolution: "prettier-plugin-packagejson@npm:2.2.18"
   dependencies:
@@ -5638,7 +5638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.2":
+"prettier@npm:2.6.2":
   version: 2.6.2
   resolution: "prettier@npm:2.6.2"
   bin:
@@ -6150,7 +6150,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^19.0.2":
+"semantic-release@npm:19.0.2":
   version: 19.0.2
   resolution: "semantic-release@npm:19.0.2"
   dependencies:
