@@ -61,7 +61,7 @@ __metadata:
     eslint: "npm:8.20.0"
     husky: "npm:8.0.1"
     lint-staged: "npm:13.0.3"
-    markdownlint-cli: "npm:0.32.0"
+    markdownlint-cli: "npm:0.32.1"
     pinst: "npm:3.0.0"
     prettier: "npm:2.7.1"
     prettier-plugin-packagejson: "npm:2.2.18"
@@ -4398,9 +4398,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli@npm:0.32.0":
-  version: 0.32.0
-  resolution: "markdownlint-cli@npm:0.32.0"
+"markdownlint-cli@npm:0.32.1":
+  version: 0.32.1
+  resolution: "markdownlint-cli@npm:0.32.1"
   dependencies:
     commander: "npm:~9.4.0"
     get-stdin: "npm:~9.0.0"
@@ -4408,29 +4408,29 @@ __metadata:
     ignore: "npm:~5.2.0"
     js-yaml: "npm:^4.1.0"
     jsonc-parser: "npm:~3.1.0"
-    markdownlint: "npm:~0.26.0"
-    markdownlint-rule-helpers: "npm:~0.17.0"
+    markdownlint: "npm:~0.26.1"
+    markdownlint-rule-helpers: "npm:~0.17.1"
     minimatch: "npm:~5.1.0"
     run-con: "npm:~1.2.11"
   bin:
     markdownlint: markdownlint.js
-  checksum: 4070bfe7b748981c2cc9f2549261346ca6b61d4960f4546402ce05c54464c26ff35dd901e4831f7c1d648b900a35592f595ad2f322d8875d2dd148ec9569492c
+  checksum: fe2ab8b9cafc8e449a25dfcde8587f10839433e1c1c2185294448f03dc02e4b287489815f10ac44121ba207ddf3d604d549d08e080c3966a1ed37c3ab1294ffe
   languageName: node
   linkType: hard
 
-"markdownlint-rule-helpers@npm:~0.17.0":
-  version: 0.17.0
-  resolution: "markdownlint-rule-helpers@npm:0.17.0"
-  checksum: c33ed3c579beb2388bbdb6ee143bf9de826f25cad540d1365ad248279f6be8553611b3675b698e9846994968b246c9dfeba445ab3d1fd214a32c293bec92724a
+"markdownlint-rule-helpers@npm:~0.17.1":
+  version: 0.17.1
+  resolution: "markdownlint-rule-helpers@npm:0.17.1"
+  checksum: aa3fc7a73a9fa0fc87b8ee67b098e536c1e0d9c26cf050464f805b3e7f7c64fbd0eb16b01dde4b01685249f73ae6fb4ec6a52a4d433bca67c4b27c7783d86a4f
   languageName: node
   linkType: hard
 
-"markdownlint@npm:~0.26.0":
-  version: 0.26.0
-  resolution: "markdownlint@npm:0.26.0"
+"markdownlint@npm:~0.26.1":
+  version: 0.26.1
+  resolution: "markdownlint@npm:0.26.1"
   dependencies:
     markdown-it: "npm:13.0.1"
-  checksum: 9eaa2a0cfa92e7e483c219f14b94a30e3dc178b4df550afdffb180e3acf4928ba0fd93a3e842f7f806f99cf061d7c7a2a28a654324e5c68db3a7745b523eeb67
+  checksum: fcdf7593b975c8de376f9579a0d473fd1b7f300380b4f8450b3f39146cf1db0f4f265a8c27e21a8b1a118d758e48ea8b87013e34d235fcf8eadabf8b6ad73b22
   languageName: node
   linkType: hard
 
