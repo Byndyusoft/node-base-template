@@ -58,14 +58,14 @@ __metadata:
     "@byndyusoft/eslint-config": "npm:2.0.0"
     "@commitlint/cli": "npm:17.0.3"
     "@commitlint/config-conventional": "npm:17.0.3"
-    eslint: "npm:8.20.0"
+    eslint: "npm:8.22.0"
     husky: "npm:8.0.1"
     lint-staged: "npm:13.0.3"
-    markdownlint-cli: "npm:0.32.0"
+    markdownlint-cli: "npm:0.32.2"
     pinst: "npm:3.0.0"
     prettier: "npm:2.7.1"
     prettier-plugin-packagejson: "npm:2.2.18"
-    semantic-release: "npm:19.0.3"
+    semantic-release: "npm:19.0.4"
   languageName: unknown
   linkType: soft
 
@@ -328,14 +328,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/config-array@npm:^0.9.2":
-  version: 0.9.5
-  resolution: "@humanwhocodes/config-array@npm:0.9.5"
+"@humanwhocodes/config-array@npm:^0.10.4":
+  version: 0.10.4
+  resolution: "@humanwhocodes/config-array@npm:0.10.4"
   dependencies:
     "@humanwhocodes/object-schema": "npm:^1.2.1"
     debug: "npm:^4.1.1"
     minimatch: "npm:^3.0.4"
-  checksum: 7d55ac1e5d33dc470f5be444ff12d59e0d132320e46cf909cac13d289877d1f56a1ec3efba8cf4ab1a413e65a281d4f817e34c132575aed50c49240c9d830c38
+  checksum: 1de59dbea29b5206781f4e4d283c81ae4470ccb0296f9f425aedf9e6f43b480f165da918da11f8f5fcd5152be47e609b006a418a51dc6857f04177e9f88efadc
+  languageName: node
+  linkType: hard
+
+"@humanwhocodes/gitignore-to-minimatch@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@humanwhocodes/gitignore-to-minimatch@npm:1.0.2"
+  checksum: 7dfb574df8fa4dc3fcf27ab81b886df33bab68a4d1362d8798b9c6fab6a45309c3028b0a88ce26db05ddec3350cbf58439944e0f04d549de67902f1d1a2e9157
   languageName: node
   linkType: hard
 
@@ -1111,6 +1118,15 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: eba988701205b33f99d879e767a08c31b53a13f2594fffcb870430561933fc2f8b8ae3efe6f956cab37df68963bb593d0590ed9a9fbd64f233194f95c045aa60
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.8.0":
+  version: 8.8.0
+  resolution: "acorn@npm:8.8.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 15b10fb381a8a0394a718eba147e120b9d1ae6ed087e61612ee5fda94f98182e5fcd78ef6725c027dc3c5677ce920617c14c359d7777e8ef6a058d2ba113f81f
   languageName: node
   linkType: hard
 
@@ -2656,12 +2672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.20.0":
-  version: 8.20.0
-  resolution: "eslint@npm:8.20.0"
+"eslint@npm:8.22.0":
+  version: 8.22.0
+  resolution: "eslint@npm:8.22.0"
   dependencies:
     "@eslint/eslintrc": "npm:^1.3.0"
-    "@humanwhocodes/config-array": "npm:^0.9.2"
+    "@humanwhocodes/config-array": "npm:^0.10.4"
+    "@humanwhocodes/gitignore-to-minimatch": "npm:^1.0.2"
     ajv: "npm:^6.10.0"
     chalk: "npm:^4.0.0"
     cross-spawn: "npm:^7.0.2"
@@ -2671,14 +2688,17 @@ __metadata:
     eslint-scope: "npm:^7.1.1"
     eslint-utils: "npm:^3.0.0"
     eslint-visitor-keys: "npm:^3.3.0"
-    espree: "npm:^9.3.2"
+    espree: "npm:^9.3.3"
     esquery: "npm:^1.4.0"
     esutils: "npm:^2.0.2"
     fast-deep-equal: "npm:^3.1.3"
     file-entry-cache: "npm:^6.0.1"
+    find-up: "npm:^5.0.0"
     functional-red-black-tree: "npm:^1.0.1"
     glob-parent: "npm:^6.0.1"
     globals: "npm:^13.15.0"
+    globby: "npm:^11.1.0"
+    grapheme-splitter: "npm:^1.0.4"
     ignore: "npm:^5.2.0"
     import-fresh: "npm:^3.0.0"
     imurmurhash: "npm:^0.1.4"
@@ -2697,7 +2717,7 @@ __metadata:
     v8-compile-cache: "npm:^2.0.3"
   bin:
     eslint: bin/eslint.js
-  checksum: 121dcf9388711bcdaf355f0ff12daab5afda28fdb3e99719896547836393a580118fcba9012e0b38bcc5d9c33f2a8fc57213ef5291140a7d66363f4a671f4c86
+  checksum: 38bc9cb70cca6eba28d01bd72d7e6e8c3a869b4b4c3425e00af981e63155e12256290eb958c6bf379d2d364980ffe0ff211af9fd527342eeec4a559979989a55
   languageName: node
   linkType: hard
 
@@ -2709,6 +2729,17 @@ __metadata:
     acorn-jsx: "npm:^5.3.2"
     eslint-visitor-keys: "npm:^3.3.0"
   checksum: 519ce18064cf4818452dd08ed8fb3e2eb0744f0d8cced4acb51daea70bf714e85616e50e0864a17d58ad43e12955fdd283724f83e978e78e2016a8795c895e66
+  languageName: node
+  linkType: hard
+
+"espree@npm:^9.3.3":
+  version: 9.3.3
+  resolution: "espree@npm:9.3.3"
+  dependencies:
+    acorn: "npm:^8.8.0"
+    acorn-jsx: "npm:^5.3.2"
+    eslint-visitor-keys: "npm:^3.3.0"
+  checksum: d9267170f35a687b40478108c917caf36d70dd7eb67d37ecae0714e97259e0b171e1b72cee5f6a8d2c903b2ac2e758d3124bc111c3711164ab7436dff688bee5
   languageName: node
   linkType: hard
 
@@ -3211,6 +3242,13 @@ __metadata:
   version: 4.2.10
   resolution: "graceful-fs@npm:4.2.10"
   checksum: 6b5f9b5aeaee0459b9c37bdbf9624f788703ce291d6bf2d7751f5003942e853f232ca613aec818d1ff7622379bc8b434c635bfda99db93e0b9b8da80ec3d844d
+  languageName: node
+  linkType: hard
+
+"grapheme-splitter@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "grapheme-splitter@npm:1.0.4"
+  checksum: c67a8e522758dd907770a78ad750e6dfdcce327b0696fdd82f4b7acb8bb22b0574c88f806afb3c6597a536fa9016e6e3486071535fd0e9226b8505c67cf2fb01
   languageName: node
   linkType: hard
 
@@ -4398,9 +4436,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli@npm:0.32.0":
-  version: 0.32.0
-  resolution: "markdownlint-cli@npm:0.32.0"
+"markdownlint-cli@npm:0.32.2":
+  version: 0.32.2
+  resolution: "markdownlint-cli@npm:0.32.2"
   dependencies:
     commander: "npm:~9.4.0"
     get-stdin: "npm:~9.0.0"
@@ -4408,29 +4446,29 @@ __metadata:
     ignore: "npm:~5.2.0"
     js-yaml: "npm:^4.1.0"
     jsonc-parser: "npm:~3.1.0"
-    markdownlint: "npm:~0.26.0"
-    markdownlint-rule-helpers: "npm:~0.17.0"
+    markdownlint: "npm:~0.26.2"
+    markdownlint-rule-helpers: "npm:~0.17.2"
     minimatch: "npm:~5.1.0"
     run-con: "npm:~1.2.11"
   bin:
     markdownlint: markdownlint.js
-  checksum: 4070bfe7b748981c2cc9f2549261346ca6b61d4960f4546402ce05c54464c26ff35dd901e4831f7c1d648b900a35592f595ad2f322d8875d2dd148ec9569492c
+  checksum: 4fb4e61625b00c2479982c27dc083954cc3c24a79b86fb5e9663144a60a381dc0e6a8d43560c7607e82d8c6c71565ca06efeebc1abff02415b011b7fc3737ece
   languageName: node
   linkType: hard
 
-"markdownlint-rule-helpers@npm:~0.17.0":
-  version: 0.17.0
-  resolution: "markdownlint-rule-helpers@npm:0.17.0"
-  checksum: c33ed3c579beb2388bbdb6ee143bf9de826f25cad540d1365ad248279f6be8553611b3675b698e9846994968b246c9dfeba445ab3d1fd214a32c293bec92724a
+"markdownlint-rule-helpers@npm:~0.17.2":
+  version: 0.17.2
+  resolution: "markdownlint-rule-helpers@npm:0.17.2"
+  checksum: 78b966481ef4851fb42b97559ea4fe5c2f02cdc79a6bc6fc021a3d295f938e548ee70556c02d896d2a08a234b2db95384c79a5e4f48621c0f1538b4fc7ac7139
   languageName: node
   linkType: hard
 
-"markdownlint@npm:~0.26.0":
-  version: 0.26.0
-  resolution: "markdownlint@npm:0.26.0"
+"markdownlint@npm:~0.26.2":
+  version: 0.26.2
+  resolution: "markdownlint@npm:0.26.2"
   dependencies:
     markdown-it: "npm:13.0.1"
-  checksum: 9eaa2a0cfa92e7e483c219f14b94a30e3dc178b4df550afdffb180e3acf4928ba0fd93a3e842f7f806f99cf061d7c7a2a28a654324e5c68db3a7745b523eeb67
+  checksum: 3ecddffab88094efaa7610b1955b30118acb976edce5e232e6fa608c3769e6f7dc2a4a9b2ef2a8270910d183f556c05152b5710b1d5026999a3ffe62435c8bfa
   languageName: node
   linkType: hard
 
@@ -6040,9 +6078,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:19.0.3":
-  version: 19.0.3
-  resolution: "semantic-release@npm:19.0.3"
+"semantic-release@npm:19.0.4":
+  version: 19.0.4
+  resolution: "semantic-release@npm:19.0.4"
   dependencies:
     "@semantic-release/commit-analyzer": "npm:^9.0.2"
     "@semantic-release/error": "npm:^3.0.0"
@@ -6071,10 +6109,10 @@ __metadata:
     semver: "npm:^7.3.2"
     semver-diff: "npm:^3.1.1"
     signale: "npm:^1.2.1"
-    yargs: "npm:^16.2.0"
+    yargs: "npm:^17.0.0"
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: ce8ea4fd201fa0be322222fa0ac79a1df3b84649f8c84ac6f87cb8641c9a4305e23cc5ce67f2edab115e504f795446bd8522326ec19e2abb62e9ebd995a41e4e
+  checksum: 5512197bed1e23f8ec413ca366e85a04c922932006c2a1eef97b53811e31de81497cc084dc480510c3f0219621278f879ed38d982b57c880303b728ef268509c
   languageName: node
   linkType: hard
 
@@ -7098,7 +7136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.3":
+"yargs-parser@npm:^20.2.3":
   version: 20.2.9
   resolution: "yargs-parser@npm:20.2.9"
   checksum: fd739a429b7cde755b8e9d28520619fb8adb94c686b2d75d3c93a6ec199fbc8bf120af6d2be144f8d3075f3d675b09893f8894a362548107aa90bb97ad662c7a
@@ -7109,21 +7147,6 @@ __metadata:
   version: 21.0.1
   resolution: "yargs-parser@npm:21.0.1"
   checksum: acaedd6c21306da55dfabb5ea5967012a322bb103eab6034cee3ace61cefda1faaac89ea10bdee3bdfed2904f43cf71f346ccecf72e85b5005e6b2b2d17201d5
-  languageName: node
-  linkType: hard
-
-"yargs@npm:^16.2.0":
-  version: 16.2.0
-  resolution: "yargs@npm:16.2.0"
-  dependencies:
-    cliui: "npm:^7.0.2"
-    escalade: "npm:^3.1.1"
-    get-caller-file: "npm:^2.0.5"
-    require-directory: "npm:^2.1.1"
-    string-width: "npm:^4.2.0"
-    y18n: "npm:^5.0.5"
-    yargs-parser: "npm:^20.2.2"
-  checksum: be4564db8f818c7eeda96653331a62829522ab2a8a773da079ebf3870ab5b875177c397c57f06d6c9238d613567ebe69d4cbac35dbef1cc9928183df7ba8d479
   languageName: node
   linkType: hard
 
